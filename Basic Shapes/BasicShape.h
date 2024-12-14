@@ -30,7 +30,7 @@ public:
 		return name;
 	}
 
-	virtual double calcArea();
+	virtual void calcArea() = 0;
 
 private:
 

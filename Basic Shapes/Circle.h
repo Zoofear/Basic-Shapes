@@ -1,6 +1,9 @@
 #pragma once
 
 #include <iostream>
+#define _USE_MATH_DEFINES
+#include <math.h>
+#include <cmath>
 #include "BasicShape.h"
 
 using namespace std;
@@ -10,7 +13,7 @@ class Circle : public BasicShape
 {
 public:
 
-	Circle(double x, double y, double r, string n);
+	Circle(double x, double y, double r, string n = "Circle");
 
 	void setxCenter(double x)
 	{
@@ -27,8 +30,22 @@ public:
 		radius = r;
 	}
 	
+	double returnxCenter()
+	{
+		return xCenter;
+	}
+	
+	double returnyCenter()
+	{
+		return yCenter;
+	}
 
+	double returnRadius()
+	{
+		return radius;
+	}
 
+	virtual void calcArea();
 
 private:
 

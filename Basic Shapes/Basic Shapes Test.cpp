@@ -2,10 +2,16 @@
 //
 
 #include <iostream>
+#include "BasicShape.h"
+#include "Circle.h"
+#include "Rectangle.h"
+#include "Square.h"
+
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
